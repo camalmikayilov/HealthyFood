@@ -1,0 +1,864 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.navBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(174, 174, 174);
+    height: 70px;
+}
+.navBar_content__list li a:hover{
+    color: green;
+}
+.navBar_content__list li:hover{
+    transition: 0.9s;
+    transform: rotateY(360deg);
+}
+.navBar_content__list{
+    display: flex;
+}
+.navBar_content__list li{
+    margin: 15px;
+}
+.navBar_content__list li a{
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+.navBar__logo a b{
+    font-size: 30px;
+    color: green;
+    cursor: pointer;
+}
+
+/* Start Main */
+.home{
+    width: 100%;
+    height: 580px;
+    background-image: url("./Image/home-bg.jpg");
+}
+.home__div{
+    position: absolute;
+    left: 33%;
+    top: 40%;
+    width: 500px;
+}
+.home__button{
+    color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.home__button a{
+    color: blueviolet;
+    padding: 5px;
+    font-size: 20px;
+}
+.home__button:hover{
+   
+   color: #000 !important;
+	background-color: transparent;
+	text-shadow: nthree;
+}
+.home__button:hover::before{
+    left: 0%;
+	right: auto;
+	width: 100%;
+}
+.home__button::before{
+    display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.home__div h1{
+    color: #fff;
+    background-color: green;
+    padding-bottom: 20px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home__div p{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.card_div__first{
+    display: flex;
+    justify-content: space-around;
+}
+.card_div__second{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.card__first{
+    width: 250px;
+    height: 350px;
+    border: 1px solid;
+    padding-top: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.924);
+}
+.card__value{
+    display: flex;
+    padding-left: 70px;
+    padding-top: 15px;
+}
+.card__value p{
+    padding-left: 15px;
+    font-size: 20px;
+}
+.card__first figure{
+    width: 200px;
+    height: 170px;
+    padding-left: 40px;
+}
+.card__first figure img{
+    width: 100%;
+    height: 100%;
+}
+.card__star i{
+    color: yellow;
+    padding-top: 15px;
+}
+.card__first h6{
+    margin-top: 20px;
+    color: yellowgreen;
+    font-size: 20px;
+}
+.card__icons{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.card__icons i{
+    width: 30px;
+    height: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.card h2{
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+/* About */
+.about{
+    margin-top: 50px;
+}
+.aboutAs{
+    display: flex;
+    justify-content: space-around;
+}
+.about h2{
+    text-align: center;
+    font-size: 40px;
+    color: green;
+}
+.about__content h3{
+    font-size: 25px;
+    color: green;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.about__content p{
+    font-size: 20px;
+    color: gray;
+
+}
+.about__button{
+    color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.about__button a{
+    color: blueviolet;
+    padding: 5px;
+    font-size: 20px;
+}
+.about__button:hover{
+   
+   color: #000 !important;
+	background-color: transparent;
+	text-shadow: nthree;
+}
+.about__button:hover::before{
+    left: 0%;
+	right: auto;
+	width: 100%;
+}
+.about__button::before{
+    display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+/* Service */
+#service{
+    margin-top: 25px;
+}
+#service h2{
+    font-size: 40px;
+    padding: 5px;
+    text-align: center;
+    color: green;
+}
+.service__first{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.service__second{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.service__card{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.service__card p{
+    margin-top: 15px;
+}
+.service__card h6{
+    margin-top: 15px;
+    font-size: 20px;
+    color: grey;
+}
+.service__card i{
+    color: grey;
+    font-size: 40px;
+}
+/* Review */
+#review h2{
+    font-size: 40px;
+    padding: 5px;
+    text-align: center;
+    color: green;
+}
+.review__first{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.review__second{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.review__header{
+    display: flex;
+}
+.review_card__img img{
+    border-radius: 50%;
+}
+.review_card__content{
+    margin-left: 45px;
+    font-size: 30px;
+    color: lime;
+}
+.review__card p{
+    font-size: 20px;
+    color: grey;
+    padding: 15px;
+    width: 300px;
+}
+.review__card{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 50px;
+}
+/* ONLINE ORDER */
+.order{
+    margin-top: 50px;
+    background-image:url("./Image/33709968-studio-photo-of-different-fruits-and-vegetables-on-wooden-table-Stock-Photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.order h2{
+    color: green;
+    text-align: right;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.onlineorder{
+    display: flex;
+    justify-content: space-around;
+
+}
+.order_inf{
+    margin-left: 900px;
+    margin-bottom: 100px;
+}
+.order_inf h3{
+    color: green;
+    font-size: 20px;
+}
+.order_inf  input{
+    width: 400px;
+    height: 40px;
+}
+.order_inf button{
+    background-color: lightgray;
+    width: 100px;
+    height: 25px;
+    margin-top: 5px;
+}
+.order_inf input{
+    outline: none;
+}
+.form__button button{
+    width: 100px;
+    height: 30px;
+    background-color: lightgray;
+}
+
+.footer__container{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("./Image/footer-bg.jpg") ;
+}
+.follow h3{
+    color: green
+}
+.contact_details h3{
+    color: green;
+}
+.footer__logo__content h2{
+    color: green;
+}
+.follow i{
+    width: 40px;
+    height: 40px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* ONLINE ORDER */
+.order{
+    margin-top: 50px;
+}
+.order h2{
+    color: green;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.onlineorder{
+    display: flex;
+    justify-content: space-around;
+
+}
+.order__img img{
+    width: 600px;
+    height: 600px;
+    border-radius: 10%;
+}
+.order_inf fieldset{
+    width: 500px;
+    height: 600px;
+    padding: 60px;
+}
+.order_inf fieldset h3{
+    color: green;
+    font-size: 20px;
+}
+.order_inf fieldset input{
+    width: 400px;
+    height: 40px;
+}
+.order_inf fieldset button{
+    background-color: lightgray;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+}
+/* FOOTER */
+footer{
+    background-image: url("./Image/footer-bg.jpg");
+}
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.name_logo h2{
+    color: green;
+}
+.contact_details h3{
+    color: green;
+}
+.social h3{
+    color: green;
+}
+.social .a i{
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+  .card__first figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.card__first figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
+.review_card__img  img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.review_card__img:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+/* Start Footer */
+footer {
+    background-color: #F0DCC5;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+}
+
+/* Start About */
+
+.footer__about {
+    width: 20%;
+    margin-top: 50px;
+}
+
+.footer_about__content p {
+    width: 249px;
+    height: 54px;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 132%;
+    letter-spacing: 0.04em;
+    color: #4F4F4F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 32px 0px;
+}
+
+.footer_about__content h5 {
+    width: 195px;
+    height: 24px;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'liga'off;
+    color: #4F4F4F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 8px;
+}
+
+.footer_about__content h6 {
+    width: 195px;
+    height: 24px;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'liga'off;
+    color: #4F4F4F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 20px;
+}
+
+.footer_about__content figure {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 30px;
+}
+
+.instagram {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2D2BB;
+    border-radius: 50%;
+}
+.baskeetbol{
+    margin-left: 8px;
+}
+.twitter{
+    margin-left: 8px;
+}
+.youtube{
+    margin-left: 8px;
+}
+.footer_about__social {
+    display: flex;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 16px;
+}
+
+.instagram:hover {
+    background-color: #B833AA;
+    transition: 0.9s;
+    transform: rotateY(180deg);
+}
+
+.baskeetbol:hover {
+    background-color: orangered;
+    transition: 0.9s;
+    transform: rotateY(180deg);
+}
+
+.twitter:hover {
+    background-color: #00ACED;
+    transition: 0.9s;
+    transform: rotateY(180deg);
+}
+
+.youtube:hover {
+    background-color: red;
+    transition: 0.9s;
+    transform: rotateY(180deg);
+}
+.footer_about__content figure{
+    cursor: pointer;
+}
+.footer_about__content p:hover{
+    color: green;
+}
+.footer_about__content h5:hover{
+    color: green;
+}
+.footer_about__content h6:hover{
+    color: green;
+}
+.footer_about__content figure{
+    width: 150px;
+    height: 90px;
+    margin-top: -42px;
+}
+.footer_about__content figure img{
+    width: 100%;
+    height: 100%;
+}
+/* End About */
+.company__support {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Start Company */
+
+.company {
+    width: 20%;
+    margin-top: 50px;
+}
+
+.company__list {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    height: 30px;
+}
+
+.company__list h5 {
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-feature-settings: 'liga'off;
+    color: #647B64;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 24px 0px;
+}
+
+.company__list h5 a {
+    color: #647B64;
+}
+
+.company_list__type li:hover a {
+    color: green;
+}
+
+.company__list:active h5 a {
+    color: red;
+}
+
+.company_list__type li {
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    font-feature-settings: 'liga'off;
+    color: #333333;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+
+.company_list__type a {
+    color: #333333;
+}
+
+/* End Company */
+
+/* Start Support */
+.support {
+    width: 20%;
+    margin-top: 50px;
+}
+
+.support__list {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    height: 30px;
+}
+
+.support__list h5 {
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    font-feature-settings: 'liga'off;
+    line-height: 30px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 24px 0px;
+}
+
+.support__list h5 a {
+    color: #647B64;
+}
+
+.support__list:active h5 a {
+    color: red;
+}
+
+.support_list__type li:hover a {
+    color: green;
+}
+
+.support_list__type li {
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    font-feature-settings: 'liga'off;
+    color: #333333;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+
+.support_list__type a {
+    color: #333333;
+}
+
+/* End Support */
+
+/* Start Message */
+
+.message {
+    width: 30%;
+    margin-top: 50px;
+}
+
+.message__btn {
+    width: 350px;
+    height: 73px;
+    background-color: #647B64;
+}
+
+.message__btn h4 {
+    width: 155px;
+    height: 20px;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125.5%;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    color: #FEFEFE;
+}
+
+.message__btn svg {
+    width: 22px;
+    height: 15px;
+}
+
+.message__btn a {
+    width: 350px;
+    height: 73px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 32px 0px;
+}
+
+.message__btn:hover {
+    background-color: red;
+}
+
+.message h3 {
+    width: 165px;
+    height: 20px;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'liga'off;
+    color: #647B64;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 30px 0px;
+}
+
+.message textarea {
+    width: 283px;
+    height: 113px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: -8px 0px;
+}
+
+.message textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px 0 0 10px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+/* End Message */
+
+
